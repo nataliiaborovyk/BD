@@ -43,7 +43,7 @@ create table WP (progetto PosInteger not null,
                 check (inizio < fine),
                 primary key (progetto, id),
                 unique (progetto, nome),
-                foreign key (progetto) references Progetto(id));
+                foreign key (progetto) references Progetto(id));delete 
 
 create table AttivitaProgetto (id PosInteger not null,
                                 persona PosInteger not null,
